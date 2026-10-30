@@ -1,20 +1,16 @@
 # NEGG0
 
-Systems programmer. I work on Linux gaming, low-latency audio, and compilers.
+Programmer. I build whatever I find interesting: tools, games, audio, compilers, bots, web stuff. No single niche, just things I want to exist.
 
 Most of my projects start with a concrete annoyance: a stutter, a dropped audio buffer, a tool that needs five manual steps. I try to turn those into small, inspectable tools with rollback paths and clear limits.
 
-## Current focus
+## Languages
 
-- [zenith-gaming-daemon](https://github.com/negg0s/zenith-gaming-daemon): game session optimizer for Linux. cgroups v2, CPU topology, PipeWire, optional sched_ext handoff.
-- [pipewire-latency](https://github.com/negg0s/pipewire-latency): inspect and tune PipeWire buffer latency without editing configs by hand.
-- [eax-native](https://github.com/negg0s/eax-native): DirectSound3D and EAX 1.0/2.0 for Wine and Proton games.
-- [VeloC](https://github.com/negg0s/VeloC): experimental C++ dialect and source-to-source compiler.
-- [chess-ai](https://github.com/negg0s/chess-ai): Lichess bot with Stockfish and a small policy-value net.
+C, C++20, C#, Python, JavaScript, TypeScript, Bash, SQL, and others. I pick whatever fits the job, or whatever I feel like learning next.
 
-## Stack
+## Tools I use
 
-C++20, Python, C, Bash, JavaScript. Linux internals, systemd, cgroups v2, PipeWire, OpenAL Soft, CMake, Clang, GDB, sanitizers, libFuzzer.
+CMake, Clang/GCC, .NET, Node.js, Git, Docker, GDB, sanitizers, libFuzzer, PipeWire, OpenAL Soft, systemd.
 
 ## Notes
 
@@ -24,4 +20,4 @@ C++20, Python, C, Bash, JavaScript. Linux internals, systemd, cgroups v2, PipeWi
 
 ## Contact
 
-Open an issue on the relevant repository. I read them.
+Email: [rokmit599@gmail.com](mailto:rokmit599@gmail.com)
