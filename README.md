@@ -25,58 +25,51 @@
 
 | Project | Description | Tech Stack |
 | :--- | :--- | :--- |
-| **[memscan](https://github.com/negg0s/vmemscan)** | Windows virtual memory and process injection forensics CLI. Audits unbacked executable memory, PEB spoofing, inline hooks, telemetry tampering (ETW/AMSI), direct/indirect syscalls, and sleeping beacon evasion. | C++20 Win32 NTAPI /MT |
-| **[obliterator](https://github.com/negg0s/obliterator)** | Native high-throughput Windows uninstaller and residual cleaner. POSIX unlink batching, handle unlocking via Restart Manager, persistence disarming, and orphaned registry/driver cleanup. | C++20 Win32 Zero-Deps |
-| **[mftscan](https://github.com/negg0s/mftscan)** | Fast NTFS Master File Table (MFT) parser and disk volume analyzer CLI for Windows. | C++20 NTFS Win32 |
-| **[who-locked](https://github.com/negg0s/who-locked)** | Fast Windows file lock inspector, handle release, and process cleanup utility. | Python Restart Manager |
-| **[pe-inspector](https://github.com/negg0s/pe-inspector)** | Static PE (EXE/DLL) binary analyzer, section inspector, and indicator scanner for Windows. | Python Static Analysis |
+| **[`vmemscan`](https://github.com/negg0s/vmemscan)** | Windows virtual memory and process injection forensics CLI. Audits unbacked executable memory, PEB spoofing, inline hooks, telemetry tampering (ETW/AMSI), direct/indirect syscalls, and sleeping beacon evasion. | `C++20` `Win32 NTAPI` `/MT` |
+| **[`obliterator`](https://github.com/negg0s/obliterator)** | Native high-throughput Windows uninstaller and residual cleaner. POSIX unlink batching, handle unlocking via Restart Manager, persistence disarming, and orphaned registry/driver cleanup. | `C++20` `Win32` `Zero-Deps` |
+| **[`mftscan`](https://github.com/negg0s/mftscan)** | Fast NTFS Master File Table (MFT) parser and disk volume analyzer CLI for Windows. | `C++20` `NTFS` `Win32` |
+| **[`who-locked`](https://github.com/negg0s/who-locked)** | Fast Windows file lock inspector, handle release, and process cleanup utility. | `Python` `Restart Manager` |
+| **[`pe-inspector`](https://github.com/negg0s/pe-inspector)** | Static PE (EXE/DLL) binary analyzer, section inspector, and indicator scanner for Windows. | `Python` `Static Analysis` |
 
 ### ⚡ Linux Kernel & Low-Latency Systems
 
 | Project | Description | Tech Stack |
 | :--- | :--- | :--- |
-| **[zenith-gaming-daemon](https://github.com/negg0s/zenith-gaming-daemon)** | Ultra-low latency Linux gaming optimization daemon. Netlink process detection, cgroups v2 housekeeping isolation, AMD 3D V-Cache / P-core affinity, PipeWire quantum tuning, sched_ext (scx) handoff, and rollback journaling. | C++20 Netlink cgroups v2 sched_ext |
-| **[win-process-tuner](https://github.com/negg0s/win-process-tuner)** | Lightweight Windows CLI for reversible game and process scheduling tuning, priority, and CPU core affinity. | Python Win32 API |
-| **[input-latency-bench](https://github.com/negg0s/input-latency-bench)** | Windows CLI for measuring QueryPerformanceCounter (QPC) overhead and software-observed keyboard timing latency. | Python QPC Win32 |
+| **[`zenith-gaming-daemon`](https://github.com/negg0s/zenith-gaming-daemon)** | Ultra-low latency Linux gaming optimization daemon. Netlink process detection, cgroups v2 housekeeping isolation, AMD 3D V-Cache / P-core affinity, PipeWire quantum tuning, sched_ext (`scx`) handoff, and rollback journaling. | `C++20` `Netlink` `cgroups v2` `sched_ext` |
+| **[`win-process-tuner`](https://github.com/negg0s/win-process-tuner)** | Lightweight Windows CLI for reversible game and process scheduling tuning, priority, and CPU core affinity. | `Python` `Win32 API` |
+| **[`input-latency-bench`](https://github.com/negg0s/input-latency-bench)** | Windows CLI for measuring QueryPerformanceCounter (QPC) overhead and software-observed keyboard timing latency. | `Python` `QPC` `Win32` |
 
 ### 🔊 Audio Engineering & DSP
 
 | Project | Description | Tech Stack |
 | :--- | :--- | :--- |
-| **[ether-dsp](https://github.com/negg0s/aether-dsp)** | Non-Euclidean Hyperbolic Waveguide & Modal Cymatics synthesis engine. | C C++20 SIMD DSP |
-| **[eax-native](https://github.com/negg0s/eax-native)** | Native Environmental Audio Extensions (EAX) spatial audio for Linux gaming via OpenAL Soft. | C++ OpenAL Soft PipeWire |
-| **[pipewire-latency](https://github.com/negg0s/pipewire-latency)** | Inspect and tune PipeWire buffer latency, quantum sizes, and sample rates on Linux. | Python PipeWire Linux |
-| **[wasapi-latency](https://github.com/negg0s/wasapi-latency)** | CLI for inspecting and tuning Windows WASAPI audio buffer latency and endpoint periods. | Python WASAPI COM |
+| **[`aether-dsp`](https://github.com/negg0s/aether-dsp)** | Non-Euclidean Hyperbolic Waveguide & Modal Cymatics synthesis engine. | `C` `C++20` `SIMD` `DSP` |
+| **[`eax-native`](https://github.com/negg0s/eax-native)** | Native Environmental Audio Extensions (EAX) spatial audio for Linux gaming via OpenAL Soft. | `C++` `OpenAL Soft` `PipeWire` |
+| **[`pipewire-latency`](https://github.com/negg0s/pipewire-latency)** | Inspect and tune PipeWire buffer latency, quantum sizes, and sample rates on Linux. | `Python` `PipeWire` `Linux` |
+| **[`wasapi-latency`](https://github.com/negg0s/wasapi-latency)** | CLI for inspecting and tuning Windows WASAPI audio buffer latency and endpoint periods. | `Python` `WASAPI` `COM` |
 
 ### 🧬 Compilers & Machine Learning
 
 | Project | Description | Tech Stack |
 | :--- | :--- | :--- |
-| **[VeloC](https://github.com/negg0s/VeloC)** | Experimental C++ dialect and source-to-source compiler with custom grammar and AST lowering. | Python Clang AST DSL |
-| **[chess-ai](https://github.com/negg0s/chess-ai)** | Chess AI bot and evaluation training pipeline with Stockfish integration. | Python PyTorch Stockfish |
-| **[chess-training-gym](https://github.com/negg0s/chess-training-gym)** | Data preparation and evaluation toolkit for chess neural network models (FEN encoding, game splitting). | Python Machine Learning |
+| **[`VeloC`](https://github.com/negg0s/VeloC)** | Experimental C++ dialect and source-to-source compiler with custom grammar and AST lowering. | `Python` `Clang` `AST` `DSL` |
+| **[`chess-ai`](https://github.com/negg0s/chess-ai)** | Chess AI bot and evaluation training pipeline with Stockfish integration. | `Python` `PyTorch` `Stockfish` |
+| **[`chess-training-gym`](https://github.com/negg0s/chess-training-gym)** | Data preparation and evaluation toolkit for chess neural network models (FEN encoding, game splitting). | `Python` `Machine Learning` |
 
 ---
 
 ## 🛠️ Tech Stack & Tooling
 
-`
-Languages  : C, C++20, C#, Python, TypeScript, Bash, SQL, x86-64 ASM
-Systems    : Linux (cgroups v2, Netlink, sched_ext, systemd), Windows (NT Native API, Win32)
-Audio/DSP  : PipeWire, OpenAL Soft, WASAPI, SIMD Waveguide Synthesis
-Tooling    : CMake, GCC, Clang, MSVC, Git, Docker, GDB, sanitizers (ASan/UBSan), libFuzzer
-`
+| Domain | Technologies & Tools |
+| :--- | :--- |
+| **Languages** | `C` • `C++20` • `C#` • `Python` • `TypeScript` • `Bash` • `SQL` • `x86-64 ASM` |
+| **Operating Systems** | **Linux** (cgroups v2, Netlink, sched_ext, systemd) • **Windows** (NT Native API, Win32) |
+| **Audio & DSP** | PipeWire • OpenAL Soft • WASAPI • SIMD Waveguide Synthesis |
+| **Build & Tooling** | CMake • Clang / GCC • MSVC • Git • Docker • GDB • ASan / UBSan • libFuzzer |
 
 ---
 
 <div align="center">
-
-### 📊 GitHub Activity
-
-<img src="https://github-readme-stats.vercel.app/api?username=negg0s&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="GitHub Stats" width="48%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=negg0s&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="Top Languages" width="45%" />
-
----
 
 ### 📫 Contact & Notes
 
