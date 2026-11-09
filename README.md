@@ -1,33 +1,89 @@
+<div align="center">
+
 # NEGG0
 
-Programmer. I build whatever I find interesting: tools, games, audio, compilers, bots, web stuff. No single niche, just things I want to exist.
+**Systems Programmer • Low-Latency Audio & DSP • Windows & Linux Internals**
 
-Most of my projects start with a concrete annoyance: a stutter, a dropped audio buffer, a tool that needs five manual steps. I try to turn those into small, inspectable tools with rollback paths and clear limits.
+[![C++20](https://img.shields.io/badge/C++20-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
+[![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org/)
+[![Linux Kernel](https://img.shields.io/badge/Linux_Kernel-FCC624?style=flat-square&logo=linux&logoColor=black)](https://kernel.org/)
+[![Win32 NTAPI](https://img.shields.io/badge/Win32_NTAPI-0078D6?style=flat-square&logo=windows&logoColor=white)](https://learn.microsoft.com/windows/)
+[![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white)](https://cmake.org/)
 
-## Selected Projects
+<p align="center">
+  <i>"I build whatever I find interesting: tools, audio engines, compilers, forensics, low-latency daemons.<br/>I prefer boring interfaces, zero runtime overhead, explicit rollback, and measurements over claims."</i>
+</p>
 
-- **[zenith-gaming-daemon](https://github.com/negg0s/zenith-gaming-daemon)** — Ultra-low latency Linux gaming optimization daemon (C++20). Netlink process detection, cgroups v2 housekeeping isolation, AMD 3D V-Cache/P-core affinity, PipeWire quantum tuning, sched_ext (scx) handoff, and atomic rollback journaling.
-- **[vmemscan](https://github.com/negg0s/vmemscan)** — Windows virtual memory and process injection forensics CLI (C++20, NT Native API, /MT). Audits unbacked executable memory, PEB/command-line spoofing, inline hooks, telemetry tampering (ETW/AMSI), direct/indirect syscalls, and sleeping beacon evasion.
-- **[obliterator](https://github.com/negg0s/obliterator)** — Native C++20 fast uninstaller and residual artifact cleaner for Windows. POSIX unlink batching, handle unlocking via Restart Manager, persistence disarming, and orphaned registry/driver/subsystem cleanup.
-- **[mftscan](https://github.com/negg0s/mftscan)** — Fast NTFS Master File Table (MFT) scanner and disk analyzer CLI for Windows (C++20).
-- **[aether-dsp](https://github.com/negg0s/aether-dsp)** — Non-Euclidean hyperbolic waveguide and modal cymatics engine (C++20).
-- **[eax-native](https://github.com/negg0s/eax-native)** — Native EAX spatial audio for Linux via OpenAL Soft.
-- **[VeloC](https://github.com/negg0s/VeloC)** — Experimental C++ dialect and source-to-source compiler in Python.
+---
 
-## Languages
+</div>
 
-C, C++20, C#, Python, JavaScript, TypeScript, Bash, SQL, and others. I pick whatever fits the job, or whatever I feel like learning next.
+## 📌 Featured Projects (Flagships)
 
-## Tools I use
+### 🛡️ Windows Internals & Forensics
 
-CMake, Clang/GCC, .NET, Node.js, Git, Docker, GDB, sanitizers, libFuzzer, PipeWire, OpenAL Soft, systemd.
+| Project | Description | Tech Stack |
+| :--- | :--- | :--- |
+| **[memscan](https://github.com/negg0s/vmemscan)** | Windows virtual memory and process injection forensics CLI. Audits unbacked executable memory, PEB spoofing, inline hooks, telemetry tampering (ETW/AMSI), direct/indirect syscalls, and sleeping beacon evasion. | C++20 Win32 NTAPI /MT |
+| **[obliterator](https://github.com/negg0s/obliterator)** | Native high-throughput Windows uninstaller and residual cleaner. POSIX unlink batching, handle unlocking via Restart Manager, persistence disarming, and orphaned registry/driver cleanup. | C++20 Win32 Zero-Deps |
+| **[mftscan](https://github.com/negg0s/mftscan)** | Fast NTFS Master File Table (MFT) parser and disk volume analyzer CLI for Windows. | C++20 NTFS Win32 |
+| **[who-locked](https://github.com/negg0s/who-locked)** | Fast Windows file lock inspector, handle release, and process cleanup utility. | Python Restart Manager |
+| **[pe-inspector](https://github.com/negg0s/pe-inspector)** | Static PE (EXE/DLL) binary analyzer, section inspector, and indicator scanner for Windows. | Python Static Analysis |
 
-## Notes
+### ⚡ Linux Kernel & Low-Latency Systems
 
-- Most projects are research or hobby work unless the README says otherwise.
-- I prefer boring interfaces, explicit rollback, and measurements over claims.
-- Issues and reproductions are more useful than stars.
+| Project | Description | Tech Stack |
+| :--- | :--- | :--- |
+| **[zenith-gaming-daemon](https://github.com/negg0s/zenith-gaming-daemon)** | Ultra-low latency Linux gaming optimization daemon. Netlink process detection, cgroups v2 housekeeping isolation, AMD 3D V-Cache / P-core affinity, PipeWire quantum tuning, sched_ext (scx) handoff, and rollback journaling. | C++20 Netlink cgroups v2 sched_ext |
+| **[win-process-tuner](https://github.com/negg0s/win-process-tuner)** | Lightweight Windows CLI for reversible game and process scheduling tuning, priority, and CPU core affinity. | Python Win32 API |
+| **[input-latency-bench](https://github.com/negg0s/input-latency-bench)** | Windows CLI for measuring QueryPerformanceCounter (QPC) overhead and software-observed keyboard timing latency. | Python QPC Win32 |
 
-## Contact
+### 🔊 Audio Engineering & DSP
 
-Email: [rokmit599@gmail.com](mailto:rokmit599@gmail.com)
+| Project | Description | Tech Stack |
+| :--- | :--- | :--- |
+| **[ether-dsp](https://github.com/negg0s/aether-dsp)** | Non-Euclidean Hyperbolic Waveguide & Modal Cymatics synthesis engine. | C C++20 SIMD DSP |
+| **[eax-native](https://github.com/negg0s/eax-native)** | Native Environmental Audio Extensions (EAX) spatial audio for Linux gaming via OpenAL Soft. | C++ OpenAL Soft PipeWire |
+| **[pipewire-latency](https://github.com/negg0s/pipewire-latency)** | Inspect and tune PipeWire buffer latency, quantum sizes, and sample rates on Linux. | Python PipeWire Linux |
+| **[wasapi-latency](https://github.com/negg0s/wasapi-latency)** | CLI for inspecting and tuning Windows WASAPI audio buffer latency and endpoint periods. | Python WASAPI COM |
+
+### 🧬 Compilers & Machine Learning
+
+| Project | Description | Tech Stack |
+| :--- | :--- | :--- |
+| **[VeloC](https://github.com/negg0s/VeloC)** | Experimental C++ dialect and source-to-source compiler with custom grammar and AST lowering. | Python Clang AST DSL |
+| **[chess-ai](https://github.com/negg0s/chess-ai)** | Chess AI bot and evaluation training pipeline with Stockfish integration. | Python PyTorch Stockfish |
+| **[chess-training-gym](https://github.com/negg0s/chess-training-gym)** | Data preparation and evaluation toolkit for chess neural network models (FEN encoding, game splitting). | Python Machine Learning |
+
+---
+
+## 🛠️ Tech Stack & Tooling
+
+`
+Languages  : C, C++20, C#, Python, TypeScript, Bash, SQL, x86-64 ASM
+Systems    : Linux (cgroups v2, Netlink, sched_ext, systemd), Windows (NT Native API, Win32)
+Audio/DSP  : PipeWire, OpenAL Soft, WASAPI, SIMD Waveguide Synthesis
+Tooling    : CMake, GCC, Clang, MSVC, Git, Docker, GDB, sanitizers (ASan/UBSan), libFuzzer
+`
+
+---
+
+<div align="center">
+
+### 📊 GitHub Activity
+
+<img src="https://github-readme-stats.vercel.app/api?username=negg0s&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="GitHub Stats" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=negg0s&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="Top Languages" width="45%" />
+
+---
+
+### 📫 Contact & Notes
+
+Most projects are research, forensic exploration, or hobby systems work.
+<br/>
+Issues, reproductions, and benchmarks are always more useful than stars.
+
+**Email:** [rokmit599@gmail.com](mailto:rokmit599@gmail.com) • **GitHub:** [@negg0s](https://github.com/negg0s)
+
+</div>
