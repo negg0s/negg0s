@@ -30,6 +30,7 @@
 | **[`mftscan`](https://github.com/negg0s/mftscan)** | Fast NTFS Master File Table (MFT) parser and disk volume analyzer CLI for Windows. | `C++20` `NTFS` `Win32` |
 | **[`who-locked`](https://github.com/negg0s/who-locked)** | Fast Windows file lock inspector, handle release, and process cleanup utility. | `Python` `Restart Manager` |
 | **[`pe-inspector`](https://github.com/negg0s/pe-inspector)** | Static PE (EXE/DLL) binary analyzer, section inspector, and indicator scanner for Windows. | `Python` `Static Analysis` |
+| **[`dll-forward-gen`](https://github.com/negg0s/dll-forward-gen)** | Automated PE DLL forwarding, export stub generator, and proxying toolkit for Windows. | `Python` `PE` `Win32` |
 
 ### ⚡ Linux Kernel & Low-Latency Systems
 
@@ -48,13 +49,15 @@
 | **[`pipewire-latency`](https://github.com/negg0s/pipewire-latency)** | Inspect and tune PipeWire buffer latency, quantum sizes, and sample rates on Linux. | `Python` `PipeWire` `Linux` |
 | **[`wasapi-latency`](https://github.com/negg0s/wasapi-latency)** | CLI for inspecting and tuning Windows WASAPI audio buffer latency and endpoint periods. | `Python` `WASAPI` `COM` |
 
-### 🧬 Compilers & Machine Learning
+### 🧬 Compilers & Developer Tooling
 
 | Project | Description | Tech Stack |
 | :--- | :--- | :--- |
 | **[`VeloC`](https://github.com/negg0s/VeloC)** | Experimental C++ dialect and source-to-source compiler with custom grammar and AST lowering. | `Python` `Clang` `AST` `DSL` |
 | **[`chess-ai`](https://github.com/negg0s/chess-ai)** | Chess AI bot and evaluation training pipeline with Stockfish integration. | `Python` `PyTorch` `Stockfish` |
 | **[`chess-training-gym`](https://github.com/negg0s/chess-training-gym)** | Data preparation and evaluation toolkit for chess neural network models (FEN encoding, game splitting). | `Python` `Machine Learning` |
+| **[`cli-kit`](https://github.com/negg0s/cli-kit)** | Lightweight typed command-line framework and shell completions toolkit for Node.js. | `TypeScript` `Node.js` `CLI` |
+| **[`discord-stuff`](https://github.com/negg0s/discord-stuff)** | Discord bot scripts and utilities for community moderation and monitoring. | `JavaScript` `Node.js` |
 
 ---
 
